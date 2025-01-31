@@ -8,6 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+    <div class="books">
+
+    </div>
+    <div class="add-book">
+        <h2 class="info">Add your books here!</h2>
+        <button class="show-form">Proceed</button>
+        <form class="hidden">
+            <button class="close">X</button>
+            <p>
+                <label for="name">Book name:</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="author">Author name:</label>
+                <input type="text" name="author" id="author">
+            </p>
+            <p>
+                <label for="pages">Pages:</label>
+                <input type="number" name="pages" id="pages">
+            </p>
+            <fieldset>
+                <legend>Have you read the book?</legend>
+                <p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="read" value="yes" checked>
+                </p>
+                <p>
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="read" value="no">
+                </p>
+            </fieldset>
+        </form>
+        <div class="footer hidden">
+            <button class="book-add-button" type="submit">Add your book</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
